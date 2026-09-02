@@ -194,6 +194,52 @@
     }
     .support strong { color: var(--teal); display: block; margin-bottom: 2px; }
 
+    /* Submission call-to-action */
+    .submit-box {
+      margin-top: 24px;
+      background: var(--teal);
+      border-radius: 14px;
+      padding: 24px 26px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      box-shadow: 0 6px 18px rgba(16,69,68,0.18);
+    }
+    .submit-box .submit-copy { flex: 1 1 300px; }
+    .submit-box h3 { margin: 0 0 4px; font-size: 18px; color: var(--white); }
+    .submit-box p { margin: 0; color: var(--mint); font-size: 15px; }
+    .btn-submit {
+      display: inline-block;
+      background: var(--gold);
+      color: var(--teal);
+      font-size: 16px;
+      font-weight: 700;
+      border-radius: 8px;
+      padding: 13px 26px;
+      white-space: nowrap;
+    }
+    .btn-submit:hover { text-decoration: none; opacity: 0.92; }
+
+    /* Program committee */
+    .pc {
+      list-style: none;
+      padding: 0;
+      margin: 8px 0 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2px 24px;
+    }
+    @media (max-width: 640px) { .pc { grid-template-columns: 1fr; } }
+    .pc li {
+      padding: 12px 0;
+      border-bottom: 1px solid var(--border);
+      margin: 0;
+    }
+    .pc .n { display: block; font-weight: 600; color: var(--teal); }
+    .pc .a { display: block; font-size: 14px; color: var(--muted); }
+
     .dates { list-style: none; padding: 0; margin: 8px 0 0; }
     .dates li {
       display: flex;
@@ -250,7 +296,8 @@
       </div>
       <div><span class="meta">18 January 2027 · HiPEAC 2027 · Glasgow, Scotland</span></div>
       <div class="btns">
-        <a class="btn btn-primary" href="#submissions">Call for contributions</a>
+        <a class="btn btn-primary" href="https://easychair.org/conferences/?conf=opensoc4he2027">Submit a paper on EasyChair</a>
+        <a class="btn btn-ghost" href="#submissions">Call for contributions</a>
         <a class="btn btn-ghost" href="https://www.hipeac.net/2027/glasgow/">HiPEAC 2027 &rarr;</a>
       </div>
     </div>
@@ -340,7 +387,7 @@
       <p>The full schedule — invited talks, paper sessions, the hands-on tutorial on an open educational SoC, poster fast-pitches, and the closing community panel — will be published here once the program is finalized.</p>
       <div class="tba">
         <span class="tba-tag">Coming soon</span>
-        <p>The detailed program will go live after author notifications (30 November 2026). Check back closer to the event, or follow HiPEAC 2027 for updates.</p>
+        <p>The detailed program will go live after author notifications (14 December 2026). Check back closer to the event, or follow HiPEAC 2027 for updates.</p>
       </div>
     </div>
   </section>
@@ -364,8 +411,16 @@
         </div>
       </div>
       <p style="margin-top:20px;">Accepted papers follow a <strong>double-blind</strong> peer-review process and, if accepted, are published open-access in the HiPEAC workshop proceedings by Schloss Dagstuhl, indexed in DBLP and Scopus. Talk-only and demo-only contributions are featured in the program without an accompanying paper.</p>
-      <p>To express interest, send us the title of your intended contribution at your earliest convenience. The submission portal (EasyChair) link will be added here once it is live.</p>
-      <p class="note">Author instructions and page limits will be announced here shortly.</p>
+
+      <div class="submit-box">
+        <div class="submit-copy">
+          <h3>Ready to submit?</h3>
+          <p>All contributions go through EasyChair. Deadline: 16 November 2026 (AoE).</p>
+        </div>
+        <a class="btn-submit" href="https://easychair.org/conferences/?conf=opensoc4he2027">Submit on EasyChair</a>
+      </div>
+
+      <p class="note">Author instructions and page limits will be announced here shortly. For a talk or demo without a paper, send us the title of your intended contribution at your earliest convenience.</p>
     </div>
   </section>
 
@@ -375,7 +430,7 @@
       <ul class="dates">
         <li><span class="d">16 November 2026</span><span class="l">Submission deadline</span></li>
         <li><span class="d">14 December 2026</span><span class="l">Notification of acceptance</span></li>
-        <li><span class="d">07 January 2026</span><span class="l">Camera-ready versions due</span></li>
+        <li><span class="d">07 January 2027</span><span class="l">Camera-ready versions due</span></li>
         <li class="is-workshop"><span class="d">18 January 2027</span><span class="l">Workshop day · Glasgow, Scotland</span></li>
       </ul>
       <p class="note">All deadlines are end-of-day, anywhere on Earth (AoE).</p>
@@ -406,6 +461,29 @@
         Alessandro Cilardo (Università di Napoli Federico II) and José Flich (Universitat Politècnica de València), who contributed to the workshop proposal.
       </div>
       <p class="note">For further information, feel free to contact any of the workshop organizers.</p>
+    </div>
+  </section>
+
+  <section id="committee">
+    <div class="wrap">
+      <h2>Program Committee</h2>
+      <p>Submissions are reviewed by:</p>
+      <ul class="pc">
+        <li><span class="n">Jose Flich</span><span class="a">Universitat Politècnica de València</span></li>
+        <li><span class="n">Alessandro Cilardo</span><span class="a">Università degli Studi di Napoli Federico II</span></li>
+        <li><span class="n">Moritz Waser</span><span class="a">Graz University of Technology</span></li>
+        <li><span class="n">Steffen Reith</span><span class="a">RheinMain University of Applied Sciences</span></li>
+        <li><span class="n">Roberto Giorgi</span><span class="a">University of Siena</span></li>
+        <li><span class="n">Florian Riedl</span><span class="a">Graz University of Technology</span></li>
+        <li><span class="n">Ahmed Kamaleldin</span><span class="a">TU Dresden</span></li>
+        <li><span class="n">Tomasz Kryjak</span><span class="a">AGH University of Krakow</span></li>
+        <li><span class="n">Teresa Cervero</span><span class="a">Barcelona Supercomputing Center</span></li>
+        <li><span class="n">Francesco Vitale</span><span class="a">Università degli Studi di Napoli Federico II</span></li>
+        <li><span class="n">Lorenz Schumm</span><span class="a">Graz University of Technology</span></li>
+        <li><span class="n">Daniel Mueller-Gritschneder</span><span class="a">TU Wien</span></li>
+        <li><span class="n">Marcel Baunach</span><span class="a">Graz University of Technology</span></li>
+      </ul>
+      <p class="note">The committee is still growing — further members will be listed here as they confirm.</p>
     </div>
   </section>
 
