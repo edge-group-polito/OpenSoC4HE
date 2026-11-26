@@ -257,6 +257,26 @@
     }
     .dates li.is-workshop .d { color: var(--teal); }
     .dates .l { color: var(--fg); }
+    .dates li.is-extended { border-left: 5px solid #d62828; padding-left: 14px; }
+    .dates .old { text-decoration: line-through; color: var(--muted); font-weight: 400; margin-right: 8px; }
+    .dates .tag-ext {
+      display: inline-block;
+      background: #d62828;
+      color: #fff;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+      padding: 2px 8px;
+      border-radius: 3px;
+      margin-left: 8px;
+    }
+    .ext-bar {
+      border-left: 5px solid #d62828;
+      padding-left: 10px;
+      font-weight: 600;
+    }
+    .ext-bar .old { text-decoration: line-through; color: var(--muted); font-weight: 400; }
 
     .note { color: var(--muted); font-size: 14px; margin-top: 14px; }
 
@@ -415,7 +435,8 @@
       <div class="submit-box">
         <div class="submit-copy">
           <h3>Ready to submit?</h3>
-          <p>All contributions go through EasyChair. Deadline: 16 November 2026 (AoE).</p>
+          <p>All contributions go through EasyChair.</p>
+          <p class="ext-bar">Deadline extended: <span class="old">16 November 2026</span> 7 December 2026 (AoE).</p>
         </div>
         <a class="btn-submit" href="https://easychair.org/conferences/?conf=opensoc4he2027">Submit on EasyChair</a>
       </div>
@@ -428,7 +449,7 @@
     <div class="wrap">
       <h2>Important dates</h2>
       <ul class="dates">
-        <li><span class="d">23 November 2026</span><span class="l">Submission deadline</span></li>
+        <li class="is-extended"><span class="d"><span class="old">23 November 2026</span><br>07 December 2026</span><span class="l">Submission deadline<span class="tag-ext">Postponed</span></span></li>
         <li><span class="d">14 December 2026</span><span class="l">Notification of acceptance</span></li>
         <li><span class="d">07 January 2027</span><span class="l">Camera-ready versions due</span></li>
         <li class="is-workshop"><span class="d">18 January 2027</span><span class="l">Workshop day · Glasgow, Scotland</span></li>
